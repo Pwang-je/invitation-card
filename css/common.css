@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    position: relative;
+    /* position: relative; */
     background: url(../img/body-bg.jpg) repeat;
 }
 .h-fixed {
@@ -122,6 +122,7 @@ body {
     }
 
 .couple-photo {
+    /* overflow: hidden; */
     margin-bottom: 13rem;
     position: relative;
 }
@@ -161,7 +162,7 @@ body {
         }
     .hearts {
         position: absolute;
-        top: 20.9%; left: 47.6%;
+        top: 20.9%; left: 46.5%;
         width: 66px;
         padding: 0;
         border: medium none;
@@ -299,5 +300,54 @@ body {
     margin-top: 5rem;
     background-color: red;
     text-align: center;
+}
+
+/*  mobile device  */
+@media screen and (max-width : 767px) {
+
+    .wd-common {
+        background-position: center center;
+    }
+    #ourstory-img {
+        background-size: center center;
+    }
+    .section-overlay header {
+        margin-top: 25%;
+    }
+    .couple-photo {
+        margin-bottom: 0;
+    }
+    .couple-photo .bride,
+    .couple-photo .broom {
+        height: 200px;
+    }
+    .couple-photo .bride {
+        margin-left: 30px;
+    }
+    .couple-photo .groom {
+        margin-left: -20px;
+    }
+        .round-frame {
+            height: 200px;
+            width: 200px;
+        }
+        .round-frame-bg {
+            height: 200px;
+            width: 201px;
+            background-color: transparent;
+            border: none;
+        }
+        .hearts {
+            visibility: hidden;
+        }
+
+
+        .timeline .post-content {
+            width: 100%;
+        }
+        .timeline-date {
+            width: 19%;
+        }
+
 }
 
