@@ -47,14 +47,19 @@ body {
         .wd-1 {
             background: url(../img/wd-1.jpg) no-repeat;
             background-size: cover;
+            background-position: 30% 70%;
         }
         .wd-2 {
             background: url(../img/wd-2.jpg) no-repeat;
             background-size: cover;
+            background-position: 30% 70%;
+
         }
         .wd-3 {
             background: url(../img/wd-3.jpg) no-repeat;
             background-size: cover;
+            background-position: 30% 90%;
+
         }
 
 
@@ -62,19 +67,39 @@ body {
 #home {
     margin: 4rem 0;
 }
-    .home-text h2,
     .home-text p {
-        margin-bottom: 4rem;
+        margin: 4rem 0;
         text-align: center;
+        font-size: 22px;
+        line-height: 5px;
     }
-    .home-text p {
-        margin-top: 4rem;
+    .home-maps {
+        width: 100%;    height: 300px;
+        border: 2px solid #cc9966;
+        background: url(../img/maps.png) no-repeat center center;
     }
         .home-textimg {
             height: 20rem;
             background: url(../img/marr.png) no-repeat center center;
         }
-
+    .gcircle {
+        display: inline-block;
+        width: 10px;    height: 10px;
+        background-color: green;
+        border-radius: 50%;
+    }
+    .green-c {
+        margin-top: 3rem;
+    }
+    .yellow-c {
+        margin-top: 1rem;
+    }
+    .ycircle {
+        display: inline-block;
+        width: 10px;    height: 10px;
+        background-color: #bf8040;
+        border-radius: 50%;
+    }
 
 /*  ourstory: */
 #ourstory-img {
@@ -168,10 +193,9 @@ body {
                 overflow: hidden;
             }
                 .round-frame img {
-                    width: 100%;    height: 35rem;
+                    width: 100%;
                     padding: 0;
                     border: none;
-                    /* vertical-align: middle; */
                 }
     .couple-photo .groom {
         margin-left: -60px;
@@ -324,7 +348,7 @@ body {
 }
 
 /*  mobile device  */
-@media screen and (max-width : 767px) {
+@media all and (min-width : 320px) and (max-width : 749px) {
 
     .wd-common {
         background-position: center center;
@@ -361,6 +385,15 @@ body {
         .hearts {
             visibility: hidden;
         }
+
+@media all and (min-device-width : 750px) and (max-device-width : 1024px) {
+
+.round-frame img {
+    background-size: 50px;
+}
+
+
+}
 
 
 /*         .timeline .post-content {
